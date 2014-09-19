@@ -1,9 +1,11 @@
 ###  OVERVIEW  ###
 A group of 30 volunteers participated in the experiments where each person performed six activities
 	(WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone on the waist. 
-	3-axial linear acceleration and 3-axial angular velocity were captured by using phone's embedded accelerometer and gyroscope. 
+	3-axial linear acceleration and 3-axial angular velocity were captured by using phone's embedded accelerometer
+	and gyroscope. 
 	The experiment data was manually labeled and randomly partitioned into two sets:
-		- 70% for generating the training data and 30% for the test data.
+		- 70% for generating the training data and
+		- 30% for the test data.
 	By using various filters, the sensor signals (accelerometer and gyroscope) were pre-processed, sampled, and separated
 	into body acceleration and gravity components. For each instance, a vector of features was obtained by calculating
 	variables from the time and frequency domain.
@@ -25,7 +27,7 @@ Inertial Signals data, both test and train data, is the accelerometer and gyrosc
 
 There is also an output file - a tidy dataset with the average of each mean and standard deviation variable
 	for each activity and each subject that can be used for further analysis.
-		9. tidydataset.txt
+	9. tidydataset.txt
 		
 ###  SOURCE DATA  ###		
 	1. X_test.txt - A 561-feature vector with time and frequency domain variables. It is a test set which contains 30%
@@ -51,27 +53,30 @@ There is also an output file - a tidy dataset with the average of each mean and 
 		Although, it contains 561 variables, only 66 of these variables - only mean and standard deviation measurements -
 		are used for further analysis according to the goal of the project.
 		
-	8. activity_labels.txt - Contains labels and descriptive names for activities performed by each subject during the experiment.
-		Label values are 1 through 6 with descriptive names matching the performed activity.
+	8. activity_labels.txt - Contains labels and descriptive names for activities performed by each subject
+		during the experiment. Label values are 1 through 6 with descriptive names matching the performed activity.
 
-To obtain tidy output data set, all testing and training data was combined into one table (X_test.txt and X_train.txt),
+To obtain tidy output data set, all testing and training data (X_test.txt and X_train.txt) was combined into one table
 with list of available features (features.txt) added as a row at the top of the table to name variables.
 Volunteer information (subject_test.txt and subject_train.txt) along with performed activities (y_test.txt and y_train.txt),
 for both training and test data, were also added to the combined table. Then, combined data was subsetted
-by extracting only measurements on the mean and standard deviation for each measurement, and transformed into a tidy
-data set by editing variable labels and activity names to use descriptive names. Finally, the resulting data table
-was written into a file "tidydataset.txt"
+by extracting only measurements on the mean and standard deviation for each measurement. Furthermore, variable labels and
+activity names were edited to use descriptive names. Finally, the data was summarized with the average of each variable
+for each activity and each subject, and the resulting tidy data set was written into a file "tidydataset.txt"
 		
 ###  OUTPUT FILE  ###
-	9. tidydataset.txt - Contains 68 Variables to provide data on the average of each variable for each activity and each subject.
-						Note:	meanFreq()features which is a Weighted average of the frequency components to obtain a mean frequency
-								are excluded from tidy data subset
+	9. tidydataset.txt - Contains 68 Variables to provide data on the average of each variable for each activity
+		and each subject.
+	
+	Note:	meanFreq()features which is a Weighted average of the frequency components to obtain a mean frequency
+			are excluded from tidy data subset
+			
 File content								
 ------------
- 1. subject				: Contains identifier of the subject who carried out the experiment.
-						  Value - within [1,30].
- 2. activity			: Lists the activity performed by each subject during the experiment using its descriptive name.
-						  Value - (LAYING, STANDING, SITTING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS)
+ 1. subject		: Contains identifier of the subject who carried out the experiment.
+				  Value - within [1,30].
+ 2. activity	: Lists the activity performed by each subject during the experiment using its descriptive name.
+				  Value - (LAYING, STANDING, SITTING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS)
  
 	-----	Time based variables denoted by "t"
 	----- 	Values - within [-1,1]
@@ -118,7 +123,7 @@ File content
 42. tBodyGyroJerkMagstd : standard deviation of the Magnitude of Jerk signal obtained by deriving body angular velocity in time 
  
 	-----	Frequency based variables denoted by "f"
-			Obtained by application of Fast Fourier Transform (FFT) to some of the signals
+		Obtained by application of Fast Fourier Transform (FFT) to some of the signals
 	-----	Values - within [-1,1]
   
 43. fBodyAccmeanX       : mean value of Body Acceleration signal along X axis (EFT)

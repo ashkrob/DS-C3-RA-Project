@@ -9,7 +9,8 @@ The final output dataset is tidy because it meets the principles of tidy data by
     * There is only one file/table for each "kind" of variable - which in this case	is the mean and
       standard deviation of the features for variables from the time and frequency domain of a raw signal
     * This is only one file/table, therefore a column that allows it to be linked to other tables is not included 
-    In addition to the four main components above
+    
+	In addition to the four main components above
     * It also includes a row at the top of the file with variable names.
     * Variable names, although abbreviated, are human readable and do not contain any extra characters
 	
@@ -19,20 +20,22 @@ The final output dataset is tidy because it meets the principles of tidy data by
 	2. Code Book that describes resulting tidy data set, as well as an overview of the source data used to obtain it
 
 **** run_analysis.R script assumes that *****
+
 	1. There is "data" folder in user's home directory
 	2. The following raw data files are in the "data" folder in home directory
-		- X_test.txt
-		- X_train.txt
-		- y_test.txt
-		- y_train.txt
-		- subject_test.txt
-		- subject_train.txt
-		- features.txt
-		- activity_labels.txt
+	- X_test.txt
+	- X_train.txt
+	- y_test.txt
+	- y_train.txt
+	- subject_test.txt
+	- subject_train.txt
+	- features.txt
+	- activity_labels.txt
 
 To complete the project task, run_analysis.R script does the following:
-	* Reads in and combines x_test and x_train files into dataframe xfile by binding rows
-	* Reads in features file and creates a vector with feature names
+	
+	- Reads in and combines x_test and x_train files into dataframe xfile by binding rows
+	- Reads in features file and creates a vector with feature names
 	* Renames columns in the combined xfile using names from features vector
 	* Reads in and converts to numeric type subjects from subject_test and subject_train files
 	* Combines test and train subjects in a dataframe using row binding
