@@ -1,4 +1,4 @@
-##Overview
+###  OVERVIEW  ###
 A group of 30 volunteers participated in the experiments where each person performed six activities
 	(WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone on the waist. 
 	3-axial linear acceleration and 3-axial angular velocity were captured by using phone's embedded accelerometer and gyroscope. 
@@ -27,7 +27,7 @@ There is also an output file - a tidy dataset with the average of each mean and 
 	for each activity and each subject that can be used for further analysis.
 		9. tidydataset.txt
 		
-##Source Data		
+###  SOURCE DATA  ###		
 	1. X_test.txt - A 561-feature vector with time and frequency domain variables. It is a test set which contains 30%
 		of all instances measured in the experiment. Each feature vector is a row on the text file.
 
@@ -62,7 +62,7 @@ by extracting only measurements on the mean and standard deviation for each meas
 data set by editing variable labels and activity names to use descriptive names. Finally, the resulting data table
 was written into a file "tidydataset.txt"
 		
-##Output File
+###  OUTPUT FILE  ###
 	9. tidydataset.txt - Contains 68 Variables to provide data on the average of each variable for each activity and each subject.
 						Note:	meanFreq()features which is a Weighted average of the frequency components to obtain a mean frequency
 								are excluded from tidy data subset

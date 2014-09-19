@@ -1,18 +1,18 @@
-===========
 This repo is part of Getting and Cleaning Data Course Project with a purpose to demonstrate
 my ability to collect, work with, and clean a data set.
 So the goal is to prepare tidy data that can be used for later analysis.
 
 The final output dataset is tidy because it meets the principles of tidy data by having the following structure
-	* Each variable measured is in one column
-	* Each different observation of that variable is in a different row
-	* There is only one file/table for each "kind" of variable - which in this case	is the mean and
-		standard deviation of the features for variables from the time and frequency domain of a raw signal
-	* This is only one file/table, therefore a column that allows it to be linked to other tables is not included 
-	In addition to the four main components above
-	* It also includes a row at the top of the file with variable names.
-	* Variable names, although abbreviated, are human readable and do not contain any extra characters
-===========
+
+    * Each variable measured is in one column
+    * Each different observation of that variable is in a different row
+    * There is only one file/table for each "kind" of variable - which in this case	is the mean and
+      standard deviation of the features for variables from the time and frequency domain of a raw signal
+    * This is only one file/table, therefore a column that allows it to be linked to other tables is not included 
+    In addition to the four main components above
+    * It also includes a row at the top of the file with variable names.
+    * Variable names, although abbreviated, are human readable and do not contain any extra characters
+	
 ##This repo contains
 	1. run_analysis.R script that takes in raw data and outputs a tidy dataset
 		for further analysis
