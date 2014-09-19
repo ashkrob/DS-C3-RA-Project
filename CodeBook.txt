@@ -5,7 +5,7 @@ A group of 30 volunteers participated in the experiments where each person perfo
 	and gyroscope. 
 	The experiment data was manually labeled and randomly partitioned into two sets:
 		- 70% for generating the training data and
-		- 30% for the test data.
+		- 30% for the test data
 	By using various filters, the sensor signals (accelerometer and gyroscope) were pre-processed, sampled, and separated
 	into body acceleration and gravity components. For each instance, a vector of features was obtained by calculating
 	variables from the time and frequency domain.
@@ -68,15 +68,15 @@ for each activity and each subject, and the resulting tidy data set was written 
 	9. tidydataset.txt - Contains 68 Variables to provide data on the average of each variable for each activity
 		and each subject.
 	
-	Note:	meanFreq()features which is a Weighted average of the frequency components to obtain a mean frequency
+	Note:	meanFreq() features which is a Weighted average of the frequency components to obtain a mean frequency
 			are excluded from tidy data subset
 			
 File content								
 ------------
  1. subject		: Contains identifier of the subject who carried out the experiment.
-				  Value - within [1,30].
- 2. activity	: Lists the activity performed by each subject during the experiment using its descriptive name.
-				  Value - (LAYING, STANDING, SITTING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS)
+				 Value - within [1,30].
+ 2. activity		: Lists the activity performed by each subject during the experiment using its descriptive name.
+				 Value - (LAYING, STANDING, SITTING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS)
  
 	-----	Time based variables denoted by "t"
 	----- 	Values - within [-1,1]
