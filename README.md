@@ -24,14 +24,14 @@ The final output dataset is tidy because it meets the principles of tidy data by
 
 	1. There is "data" folder in user's home directory
 	2. The following raw data files are in the "data" folder in home directory
-	- X_test.txt
-	- X_train.txt
-	- y_test.txt
-	- y_train.txt
-	- subject_test.txt
-	- subject_train.txt
-	- features.txt
-	- activity_labels.txt
+		- X_test.txt
+		- X_train.txt
+		- y_test.txt
+		- y_train.txt
+		- subject_test.txt
+		- subject_train.txt
+		- features.txt
+		- activity_labels.txt
 
 To complete the project task, run_analysis.R script does the following:
 	
